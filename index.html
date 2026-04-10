@@ -1496,7 +1496,33 @@
       background: var(--charcoal);
       transition: all 0.3s;
     }
+/* DESTACAR BOTÓN FORMACIÓN EN EL MENÚ */
+    .nav-links a.nav-formacion {
+      color: var(--charcoal);
+      border: 1px solid var(--gold); /* Recuadro dorado */
+      padding: 10px 18px !important; /* Espaciado interno */
+      transition: all 0.3s ease;
+      font-weight: 500;
+      display: inline-block;
+      border-radius: 2px;
+    }
 
+    .nav-links a.nav-formacion:hover {
+      background-color: var(--gold-dark);
+      color: white !important;
+      border-color: var(--gold-dark);
+    }
+
+    /* Animación de pulso suave para atraer la mirada */
+    .nav-formacion {
+      animation: pulse-gold 2.5s infinite;
+    }
+
+    @keyframes pulse-gold {
+      0% { box-shadow: 0 0 0 0 rgba(196, 168, 130, 0.5); }
+      70% { box-shadow: 0 0 0 8px rgba(196, 168, 130, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(196, 168, 130, 0); }
+    }
     /* RESPONSIVE */
     @media(max-width:1200px) {
       .experience-strip {
@@ -1678,12 +1704,12 @@
   <nav>
     <a href="#" class="nav-logo" onclick="openTab(event, 'tab-home')">LASHES<span>&middot;</span>CATHYLASH</a>
     <ul class="nav-links">
-      <li><a href="#" class="nav-link active" onclick="openTab(event, 'tab-home'); return false;">Inicio</a></li>
-      <li><a href="#" class="nav-link" onclick="openTab(event, 'tab-academia'); return false;">Formación</a></li>
-      <li><a href="#" class="nav-link" onclick="openTab(event, 'tab-servicios'); return false;">Servicios</a></li>
-      <li><a href="#" class="nav-link" onclick="openTab(event, 'tab-resenas'); return false;">Reseñas</a></li>
-      <li><a href="#contacto" class="nav-link" onclick="closeMobileMenu()">Contacto</a></li>
-    </ul>
+  <li><a href="#" class="nav-link active" onclick="openTab(event, 'tab-home'); return false;">Inicio</a></li>
+  <li><a href="#" class="nav-link nav-formacion" onclick="openTab(event, 'tab-academia'); return false;">Formación</a></li>
+  <li><a href="#" class="nav-link" onclick="openTab(event, 'tab-servicios'); return false;">Servicios</a></li>
+  <li><a href="#" class="nav-link" onclick="openTab(event, 'tab-resenas'); return false;">Reseñas</a></li>
+  <li><a href="#contacto" class="nav-link" onclick="closeMobileMenu()">Contacto</a></li>
+</ul>
     <a href="https://wa.me/34622106687" class="nav-cta" target="_blank">Reservar cita</a>
     <div class="nav-toggle" onclick="toggleMenu(this)"><span></span><span></span><span></span></div>
   </nav>
@@ -3014,7 +3040,7 @@
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
         <div class="review-text">&ldquo;Cathy es la única profesional a la que confío mis ojos sin dudar. Su dominio de
-          la pestaña láser no tiene competencia. El resultado habla solo.&rdquo;</div>
+          la pestaña no tiene competencia. El resultado habla solo.&rdquo;</div>
         <div class="review-author">
           <div class="review-avatar">C</div>
           <div>
