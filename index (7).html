@@ -1,0 +1,3433 @@
+  <!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <title>Lashes Cathy Lash — Extensiones · Lifting Coreano · Pestaña Led · Zaragoza
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Jost:wght@200;300;400;500&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    :root {
+      --cream: #FDFAF7;
+      --blush: #F2E4DC;
+      --blush-deep: #E8CEBE;
+      --gold: #C4A882;
+      --gold-light: #D4BC9A;
+      --gold-dark: #A88A5E;
+      --charcoal: #1C1C1C;
+      --warm-grey: #6B6360;
+      --light-grey: #E8E3DF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 60px;
+      background: rgba(253, 250, 247, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(196, 168, 130, 0.22);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.12rem;
+      font-weight: 400;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      text-decoration: none;
+    }
+
+    .nav-logo span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 44px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--warm-grey);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    .nav-cta {
+      font-size: 0.66rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cream);
+      background: var(--charcoal);
+      padding: 11px 28px;
+      text-decoration: none;
+      border: 1px solid var(--charcoal);
+      transition: all 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold-dark);
+      border-color: var(--gold-dark);
+    }
+
+    /* HERO — portada negocio */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 86px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: var(--blush);
+      z-index: 0;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 60px 80px 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s ease forwards;
+    }
+
+    .hero-eyebrow-line {
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero-eyebrow-text {
+      font-size: 0.63rem;
+      font-weight: 400;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 4.8vw, 4.6rem);
+      font-weight: 400;
+      line-height: 1.06;
+      color: var(--charcoal);
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.35s ease forwards;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-dark);
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.22rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--warm-grey);
+      line-height: 1.7;
+      margin-bottom: 50px;
+      max-width: 420px;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.5s ease forwards;
+    }
+
+    .hero-divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin-bottom: 36px;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.6s ease forwards;
+    }
+
+    .hero-specialties {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 52px;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.65s ease forwards;
+    }
+
+    .hero-specialty {
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      letter-spacing: 0.1em;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-specialty::before {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: var(--gold-light);
+      flex-shrink: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.8s ease forwards;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--charcoal);
+      color: var(--cream);
+      padding: 15px 36px;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--charcoal);
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-dark);
+      border-color: var(--gold-dark);
+    }
+
+    .btn-outline {
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 2px;
+      transition: color 0.3s;
+    }
+
+    .btn-outline:hover {
+      color: var(--gold-dark);
+    }
+
+    .hero-image-col {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .hero-photo {
+      width: 100%;
+      height: calc(100vh - 86px);
+      object-fit: cover;
+      object-position: center top;
+      opacity: 0;
+      animation: fadeIn 1.2s 0.4s ease forwards;
+    }
+
+    .hero-corner-tag {
+      position: absolute;
+      top: 80px;
+      right: 28px;
+      background: rgba(28, 28, 28, 0.88);
+      backdrop-filter: blur(8px);
+      color: var(--gold-light);
+      padding: 16px 20px;
+      font-size: 0.6rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      line-height: 2;
+      text-align: center;
+      z-index: 3;
+      opacity: 0;
+      animation: fadeIn 1s 1s ease forwards;
+      border-left: 2px solid var(--gold-dark);
+    }
+
+    /* MARQUEE */
+    .gold-strip {
+      background: var(--charcoal);
+      padding: 17px 0;
+      overflow: hidden;
+    }
+
+    .gold-strip-inner {
+      display: flex;
+      white-space: nowrap;
+      animation: marquee 24s linear infinite;
+    }
+
+    .gold-strip-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.88rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--gold-light);
+      letter-spacing: 0.18em;
+      padding: 0 48px;
+      flex-shrink: 0;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0)
+      }
+
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    /* 11 AÑOS — EXPERIENCIA STRIP */
+    .experience-strip {
+      display: grid;
+      grid-template-columns: 1fr 2px 1fr 2px 1fr 2px 1fr;
+      background: var(--cream);
+      border-top: 1px solid var(--light-grey);
+      border-bottom: 1px solid var(--light-grey);
+    }
+
+    .exp-divider {
+      background: var(--light-grey);
+    }
+
+    .exp-item {
+      padding: 60px 48px;
+      text-align: center;
+      position: relative;
+    }
+
+    .exp-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.6rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .exp-num em {
+      font-style: italic;
+      color: var(--gold-dark);
+    }
+
+    .exp-label {
+      font-size: 0.64rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--warm-grey);
+      line-height: 1.6;
+    }
+
+    .exp-sublabel {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.92rem;
+      font-style: italic;
+      color: var(--gold-dark);
+      margin-top: 6px;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 120px 80px;
+    }
+
+    .section-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .section-eyebrow-line {
+      width: 36px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .section-eyebrow-text {
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3.2vw, 3rem);
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--gold-dark);
+    }
+
+    .section-intro {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.12rem;
+      font-weight: 300;
+      line-height: 1.78;
+      color: var(--warm-grey);
+      max-width: 560px;
+      margin-bottom: 60px;
+    }
+
+    /* ABOUT — CATHY */
+    .about {
+      background: var(--blush);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-photo-col {
+      position: relative;
+    }
+
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .about-photo-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--charcoal);
+      color: var(--gold-light);
+      padding: 24px 28px;
+      font-size: 0.6rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      line-height: 2;
+      border: 4px solid var(--blush);
+      text-align: center;
+    }
+
+    .about-photo-badge strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--gold-light);
+      letter-spacing: 0.05em;
+    }
+
+    .about-text {
+      padding-left: 20px;
+    }
+
+    .about-quote {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.55rem;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1.45;
+      margin-bottom: 32px;
+      border-left: 2px solid var(--gold);
+      padding-left: 28px;
+    }
+
+    .about-body {
+      font-size: 0.86rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      line-height: 1.9;
+      margin-bottom: 32px;
+    }
+
+    .about-credentials {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .about-credential {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .about-credential-line {
+      width: 1px;
+      background: var(--gold);
+      flex-shrink: 0;
+      align-self: stretch;
+      min-height: 16px;
+    }
+
+    .about-credential-text {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      line-height: 1.6;
+    }
+
+    .about-credential-text strong {
+      color: var(--charcoal);
+      font-weight: 500;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    /* ACADEMIA */
+    .academia-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .academia-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .academia-step {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 0;
+      padding-bottom: 36px;
+      margin-bottom: 36px;
+      border-bottom: 1px solid var(--light-grey);
+    }
+
+    .academia-step:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .academia-step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: var(--gold-light);
+      line-height: 1;
+      padding-top: 2px;
+    }
+
+    .academia-step-body h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 8px;
+    }
+
+    .academia-step-body p {
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      line-height: 1.75;
+    }
+
+    .academia-card {
+      background: var(--charcoal);
+      padding: 44px 38px;
+      position: sticky;
+      top: 100px;
+    }
+
+    .academia-card-eyebrow {
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .academia-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.25;
+      margin-bottom: 28px;
+    }
+
+    .kit-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      margin-bottom: 32px;
+    }
+
+    .kit-list li {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: rgba(253, 250, 247, 0.7);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .kit-list li::before {
+      content: '';
+      width: 18px;
+      height: 1px;
+      background: var(--gold-dark);
+      flex-shrink: 0;
+    }
+
+    .duration-tag {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(196, 168, 130, 0.12);
+      border: 1px solid rgba(196, 168, 130, 0.25);
+      padding: 13px 18px;
+      margin-bottom: 28px;
+      font-size: 0.76rem;
+      font-weight: 300;
+      color: var(--gold-light);
+      letter-spacing: 0.1em;
+    }
+
+    .btn-gold {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background: var(--gold-dark);
+      color: var(--cream);
+      padding: 15px 28px;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--gold-dark);
+      transition: all 0.3s;
+      margin-bottom: 12px;
+    }
+
+    .btn-gold:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .btn-ghost-light {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background: transparent;
+      color: rgba(253, 250, 247, 0.6);
+      padding: 13px 28px;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid rgba(253, 250, 247, 0.2);
+      transition: all 0.3s;
+    }
+
+    .btn-ghost-light:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    /* CALENDAR */
+    .cal-block {
+      margin-top: 40px;
+      border-top: 1px solid var(--light-grey);
+      padding-top: 40px;
+    }
+
+    .cal-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 24px;
+      color: var(--charcoal);
+    }
+
+    .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .cal-date {
+      padding: 16px 10px;
+      border: 1px solid var(--light-grey);
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.25s;
+    }
+
+    .cal-date:hover,
+    .cal-date.active {
+      border-color: var(--gold);
+      background: var(--blush);
+    }
+
+    .cal-date.active .cal-day {
+      color: var(--gold-dark);
+    }
+
+    .cal-month {
+      font-size: 0.57rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--warm-grey);
+      margin-bottom: 4px;
+    }
+
+    .cal-day {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .cal-type {
+      font-size: 0.57rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      letter-spacing: 0.08em;
+    }
+
+    .cal-info {
+      background: var(--blush);
+      padding: 16px 18px;
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      line-height: 1.7;
+      display: none;
+      margin-bottom: 16px;
+      border-left: 2px solid var(--gold);
+    }
+
+    .cal-info.visible {
+      display: block;
+    }
+
+    .cal-info strong {
+      color: var(--charcoal);
+      font-weight: 500;
+    }
+
+    /* SERVICES */
+    .services {
+      background: var(--cream);
+    }
+
+    .services-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .service-item {
+      border-top: 1px solid var(--light-grey);
+      overflow: hidden;
+    }
+
+    .service-item:last-child {
+      border-bottom: 1px solid var(--light-grey);
+    }
+
+    .service-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 32px 0;
+      cursor: pointer;
+      gap: 40px;
+      transition: padding 0.3s;
+    }
+
+    .service-header:hover .service-header-name {
+      color: var(--gold-dark);
+    }
+
+    .service-header-left {
+      display: flex;
+      align-items: baseline;
+      gap: 28px;
+      flex: 1;
+    }
+
+    .service-header-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--gold-light);
+      flex-shrink: 0;
+      width: 26px;
+    }
+
+    .service-header-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      transition: color 0.3s;
+    }
+
+    .service-header-tag {
+      font-size: 0.6rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--warm-grey);
+    }
+
+    .service-toggle {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--light-grey);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--warm-grey);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      transition: all 0.3s;
+      font-weight: 300;
+    }
+
+    .service-item.open .service-toggle {
+      background: var(--charcoal);
+      border-color: var(--charcoal);
+      color: var(--cream);
+    }
+
+    .service-body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.4s ease;
+    }
+
+    .service-item.open .service-body {
+      grid-template-rows: 1fr;
+    }
+
+    .service-body-inner {
+      overflow: hidden;
+    }
+
+    .service-body-content {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 60px;
+      padding: 0 0 48px 54px;
+      align-items: start;
+    }
+
+    .service-desc-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--gold-dark);
+      margin-bottom: 16px;
+    }
+
+    .service-desc-text {
+      font-size: 0.84rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      line-height: 1.9;
+      margin-bottom: 22px;
+    }
+
+    .service-points {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .service-points li {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      line-height: 1.5;
+    }
+
+    .service-points li::before {
+      content: '';
+      width: 16px;
+      height: 1px;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 10px;
+    }
+
+    .service-aside {
+      background: var(--blush);
+      padding: 28px 24px;
+      border-left: 2px solid var(--gold-dark);
+    }
+
+    .service-aside-label {
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin-bottom: 10px;
+    }
+
+    .service-aside-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    /* INSTAGRAM HIGHLIGHT */
+    .instagram-section {
+      background: var(--charcoal);
+      padding: 90px 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .instagram-text .section-eyebrow-text {
+      color: var(--gold-light);
+    }
+
+    .instagram-text .section-title {
+      color: var(--cream);
+    }
+
+    .instagram-text .section-title em {
+      color: var(--gold-light);
+    }
+
+    .instagram-text p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.08rem;
+      font-weight: 300;
+      color: rgba(253, 250, 247, 0.6);
+      line-height: 1.8;
+      margin-top: 16px;
+    }
+
+    .instagram-cta-col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .btn-instagram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+      padding: 26px 40px;
+      background: linear-gradient(135deg, #F58529 0%, #DD2A7B 40%, #8134AF 70%, #515BD4 100%);
+      color: white;
+      text-decoration: none;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      transition: opacity 0.3s, transform 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-instagram::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #E0461A 0%, #C01C6A 40%, #6B1E9A 70%, #3A47BC 100%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .btn-instagram:hover::before {
+      opacity: 1;
+    }
+
+    .btn-instagram:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-instagram svg,
+    .btn-instagram span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-instagram svg {
+      width: 22px;
+      height: 22px;
+      fill: white;
+      flex-shrink: 0;
+    }
+
+    .btn-instagram-handle {
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .instagram-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .ig-stat {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(196, 168, 130, 0.15);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .ig-stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--gold-light);
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+    .ig-stat-label {
+      font-size: 0.6rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(253, 250, 247, 0.4);
+    }
+
+    /* REVIEWS */
+    .reviews {
+      background: var(--blush);
+    }
+
+    .reviews-masonry {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .review-card {
+      background: var(--cream);
+      padding: 34px 30px;
+      border: 1px solid transparent;
+      transition: border-color 0.3s;
+    }
+
+    .review-card:hover {
+      border-color: rgba(196, 168, 130, 0.45);
+    }
+
+    .review-card.featured {
+      background: var(--charcoal);
+    }
+
+    .review-stars {
+      color: var(--gold);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 18px;
+    }
+
+    .review-card.featured .review-stars {
+      color: var(--gold-light);
+    }
+
+    .review-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--charcoal);
+      line-height: 1.78;
+      margin-bottom: 24px;
+    }
+
+    .review-card.featured .review-text {
+      color: rgba(253, 250, 247, 0.88);
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .review-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--blush-deep);
+      border: 1px solid rgba(196, 168, 130, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--gold-dark);
+      flex-shrink: 0;
+    }
+
+    .review-card.featured .review-avatar {
+      background: rgba(196, 168, 130, 0.15);
+      border-color: rgba(196, 168, 130, 0.3);
+      color: var(--gold-light);
+    }
+
+    .review-name {
+      font-size: 0.76rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      margin-bottom: 2px;
+    }
+
+    .review-card.featured .review-name {
+      color: var(--cream);
+    }
+
+    .review-role {
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+    }
+
+    .review-card.featured .review-role {
+      color: var(--gold-light);
+    }
+
+    /* CTA */
+    .cta-final {
+      padding: 110px 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-final::after {
+      content: 'CATHY';
+      position: absolute;
+      right: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Playfair Display', serif;
+      font-size: 20rem;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(196, 168, 130, 0.07);
+      pointer-events: none;
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    .cta-h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .cta-h2 em {
+      font-style: italic;
+      color: var(--gold-dark);
+    }
+
+    .cta-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.08rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      line-height: 1.75;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-whatsapp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #25D366;
+      color: white;
+      padding: 17px 36px;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s;
+      border: none;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1DB954;
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp svg {
+      width: 17px;
+      height: 17px;
+      fill: white;
+      flex-shrink: 0;
+    }
+
+    .cta-note {
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--warm-grey);
+      line-height: 1.65;
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--charcoal);
+      padding: 70px 80px 38px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 60px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.12);
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cream);
+      margin-bottom: 14px;
+    }
+
+    .footer-desc {
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: rgba(253, 250, 247, 0.45);
+      line-height: 1.8;
+      max-width: 290px;
+      margin-bottom: 24px;
+    }
+
+    .footer-ig {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(196, 168, 130, 0.35);
+      color: var(--gold-light);
+      padding: 11px 20px;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .footer-ig:hover {
+      background: rgba(196, 168, 130, 0.08);
+      border-color: var(--gold-light);
+    }
+
+    .footer-ig svg {
+      width: 15px;
+      height: 15px;
+      fill: var(--gold-light);
+    }
+
+    .footer-col-title {
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .footer-links a {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: rgba(253, 250, 247, 0.5);
+      text-decoration: none;
+      transition: color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-links a::before {
+      content: '';
+      width: 0;
+      height: 1px;
+      background: var(--gold-dark);
+      transition: width 0.3s;
+    }
+
+    .footer-links a:hover::before {
+      width: 14px;
+    }
+
+    .footer-contact-lbl {
+      font-size: 0.58rem;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin-bottom: 4px;
+    }
+
+    .footer-contact-val {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: rgba(253, 250, 247, 0.6);
+      margin-bottom: 18px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-copy {
+      font-size: 0.66rem;
+      font-weight: 300;
+      color: rgba(253, 250, 247, 0.28);
+      letter-spacing: 0.08em;
+    }
+
+    .footer-badge {
+      font-size: 0.64rem;
+      font-weight: 300;
+      color: rgba(253, 250, 247, 0.3);
+      letter-spacing: 0.1em;
+    }
+
+    .footer-badge span {
+      color: var(--gold-dark);
+      font-weight: 400;
+    }
+
+    /* ANIM */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay {
+      transition-delay: 0.15s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 0.3s;
+    }
+
+    /* NAV TOGGLE */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 1px;
+      background: var(--charcoal);
+      transition: all 0.3s;
+    }
+/* DESTACAR BOTÓN FORMACIÓN EN EL MENÚ */
+    .nav-links a.nav-formacion {
+      color: var(--charcoal);
+      border: 1px solid var(--gold); /* Recuadro dorado */
+      padding: 10px 18px !important; /* Espaciado interno */
+      transition: all 0.3s ease;
+      font-weight: 500;
+      display: inline-block;
+      border-radius: 2px;
+    }
+
+    .nav-links a.nav-formacion:hover {
+      background-color: var(--gold-dark);
+      color: white !important;
+      border-color: var(--gold-dark);
+    }
+
+    /* Animación de pulso suave para atraer la mirada */
+    .nav-formacion {
+      animation: pulse-gold 2.5s infinite;
+    }
+
+    @keyframes pulse-gold {
+      0% { box-shadow: 0 0 0 0 rgba(196, 168, 130, 0.5); }
+      70% { box-shadow: 0 0 0 8px rgba(196, 168, 130, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(196, 168, 130, 0); }
+    }
+    /* RESPONSIVE */
+    @media(max-width:1200px) {
+      .experience-strip {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .exp-divider {
+        display: none;
+      }
+
+      .exp-item {
+        border-bottom: 1px solid var(--light-grey);
+      }
+
+      .academia-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .academia-card {
+        position: static;
+      }
+
+      .service-body-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .service-aside {
+        border-left: none;
+        border-top: 2px solid var(--gold-dark);
+      }
+    }
+
+    @media(max-width:1024px) {
+      nav {
+        padding: 18px 32px;
+      }
+
+      section {
+        padding: 80px 40px;
+      }
+
+      #transformar {
+        grid-template-columns: 1fr !important;
+      }
+
+      #transformar > div:last-child {
+        min-height: 60vw !important;
+        max-height: 480px;
+      }
+
+      #transformar > div:first-child {
+        padding: 70px 40px !important;
+        min-height: auto !important;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero::before {
+        width: 100%;
+        height: 55%;
+        top: auto;
+        bottom: 0;
+      }
+
+      .hero-content {
+        padding: 100px 40px 60px;
+      }
+
+      .hero-image-col {
+        height: 55vw;
+        max-height: 440px;
+      }
+
+      .hero-photo {
+        height: 100%;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .about-text {
+        padding-left: 0;
+      }
+
+      .reviews-masonry {
+        grid-template-columns: 1fr;
+      }
+
+      .instagram-section {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 70px 40px;
+      }
+
+      .cta-final {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 80px 40px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 14px;
+      }
+    }
+
+    @media(max-width:768px) {
+      nav {
+        padding: 16px 24px;
+      }
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: flex;
+      }
+
+      section {
+        padding: 60px 24px;
+      }
+
+      .hero-content {
+        padding: 90px 24px 50px;
+      }
+
+      .experience-strip {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .exp-item {
+        padding: 40px 24px;
+      }
+
+      .service-body-content {
+        padding-left: 0;
+      }
+
+      .cal-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .instagram-section {
+        padding: 60px 24px;
+      }
+
+      .cta-final {
+        padding: 60px 24px;
+      }
+
+      footer {
+        padding: 60px 24px 30px;
+      }
+    }
+
+    /* TABS */
+    .tab-content { display:none; }
+    .tab-content.active-tab { display:block; animation:fadeIn 0.5s ease forwards; }
+    .nav-links a.active { color:var(--gold-dark); font-weight: 500; }
+
+/* --- BOTÓN PREMIUM GLAMUROSO --- */
+.btn-premium-gold {
+    position: relative;
+    background: #1c1c1c; /* Color Charcoal */
+    color: #D4BC9A !important; /* Color Gold Light */
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    padding: 10px 20px;
+    border: 1px solid #A88A5E; /* Gold Dark */
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btn-premium-gold:hover {
+    background: #000;
+    color: #FDFAF7 !important; /* Cream */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(196, 168, 130, 0.4);
+}
+
+/* El efecto de brillo que cruza */
+.shimmer {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transform: skewX(-20deg);
+    animation: shine-premium 3s infinite;
+}
+
+@keyframes shine-premium {
+    0% { left: -100%; }
+    20% { left: 150%; }
+    100% { left: 150%; }
+}
+
+/* --- OVERLAYS EVENTO (Splash y Slider) --- */
+.splash-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: #000;
+  z-index: 99999;
+  display: flex; align-items: center; justify-content: center; flex-direction: column;
+  transition: opacity 1s ease, visibility 1s ease;
+  overflow: hidden;
+}
+.splash-overlay.hidden {
+  opacity: 0; visibility: hidden;
+}
+.splash-close {
+  position: absolute; top: 30px; right: 40px;
+  background: transparent; color: #fff;
+  border: none;
+  font-size: 3rem; cursor: pointer;
+  z-index: 100000;
+  display: flex; align-items: center; justify-content: center; padding: 10px;
+}
+.splash-close:hover {
+  transform: scale(1.1);
+}
+
+/* --- PREMIUM HERO SLIDER (EVENTO) --- */
+.event-slider-container {
+  width: 100%; padding-top: 86px; background: #000; position: relative; overflow: hidden;
+}
+.event-slide {
+  position: relative; width: 100%; margin: 0;
+  display: flex; min-height: 100vh;
+}
+.event-slide-bg {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, #181818 0%, #2a2a2a 100%); z-index: 0; overflow: hidden;
+}
+.event-slide-bg::after {
+  content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+  background: radial-gradient(circle at center, rgba(212,188,154,0.1) 0%, transparent 60%);
+  animation: slowPan 25s infinite alternate ease-in-out;
+}
+@keyframes slowPan { 0% { transform: scale(1) translate(0,0); } 100% { transform: scale(1.1) translate(2% , 2%); } }
+.event-slide-content {
+  position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; width: 100%; padding: 60px 2vw;
+}
+.event-slide-title {
+  font-family: 'Playfair Display', serif; font-size: clamp(4.5rem, 10vh, 10rem);
+  line-height: 1.1; color: #fff; margin-bottom: 20px; text-shadow: 2px 4px 10px rgba(0,0,0,0.4);
+}
+.event-slide-title em { font-style: normal; color: #D4BC9A; }
+.event-slide-desc {
+  font-family: 'Montserrat', sans-serif; font-size: clamp(1.6rem, 3.5vh, 2.5rem); letter-spacing: 3px; text-transform: uppercase;
+  color: #D4BC9A; max-width: 800px; margin: 0 auto 40px; line-height: 1.6; font-weight: 300;
+}
+.event-slide-cta { 
+  font-family: 'Montserrat', sans-serif !important; font-weight: bold !important; font-size: clamp(1.6rem, 3.5vh, 2.5rem) !important; 
+  text-transform: none; border-radius:4px !important; text-decoration:none !important;
+  background: #D4BC9A !important; color:#000 !important; padding:1.5vh 3vw !important; border:none !important;
+}
+
+@media(max-width:768px) {
+  .event-slide { min-height: 70vh; }
+  .splash-close { top: 15px; right: 15px; font-size:2rem; }
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- SPLASH SCREEN ENTRADA -->
+
+  
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo" onclick="openTab(event, 'tab-home')">LASHES<span>&middot;</span>CATHYLASH</a>
+    <ul class="nav-links">
+  <li><a href="#" class="nav-link active" onclick="openTab(event, 'tab-home'); return false;">Inicio</a></li>
+  <li><a href="#" class="nav-link nav-formacion" onclick="openTab(event, 'tab-academia'); return false;">Formación</a></li>
+  <li><a href="#" class="nav-link" onclick="openTab(event, 'tab-servicios'); return false;">Servicios</a></li>
+  <li><a href="#" class="nav-link" onclick="openTab(event, 'tab-resenas'); return false;">Reseñas</a></li>
+  <li><a href="#contacto" class="nav-link" onclick="closeMobileMenu()">Contacto</a></li>
+</ul>
+    <a href="https://wa.me/34622106687" class="nav-cta" target="_blank">Reservar cita</a>
+    <div class="nav-toggle" onclick="toggleMenu(this)"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- HERO — PORTADA NEGOCIO -->
+  <div id="tab-home" class="tab-content active-tab">
+
+  <!-- SLIDER PREMIUM EVENTO REGISTRO -->
+  <div class="event-slider-container">
+    <div class="event-slide">
+      <div class="event-slide-bg"></div>
+      <div class="event-slide-content">
+        <h2 class="event-slide-title">GRAN <em>EVENTO</em></h2>
+        <p class="event-slide-desc">Únete a nosotros el Domingo 26 de Abril de 2026 en Zaragoza impartido por Cathy Risco.</p>
+        <a href="https://wa.me/34622106687?text=Hola,%20quiero%20asistir%20gratuitamente%20al%20Evento%20de%20Pesta%C3%B1as%20en%20Zaragoza." class="event-slide-cta" target="_blank">
+          ¡RESERVA TU PLAZA!
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ① PRESENTACIÓN CATHY — foto tablet -->
+  <section class="about" id="cathy" style="min-height:100vh; display:flex; align-items:center; padding-top:86px;">
+    <div class="about-grid" style="align-items:center;">
+      <div style="position:relative; overflow:hidden;">
+        <img src="WhatsApp%20Image%202026-04-06%20at%2023.41.05.jpeg" alt="Cathy — Lashes Cathylash"
+          style="width:100%; height:90vh; max-height:780px; object-fit:cover; object-position:center top; display:block;">
+        <div style="position:absolute; bottom:0; left:0; right:0; height:30%; background:linear-gradient(to top, rgba(28,28,28,0.55), transparent);"></div>
+        <div style="position:absolute; bottom:28px; left:28px; background:rgba(28,28,28,0.82); backdrop-filter:blur(8px); color:var(--gold-light); padding:14px 20px; font-size:0.58rem; font-weight:300; letter-spacing:0.26em; text-transform:uppercase; line-height:2; border-left:2px solid var(--gold-dark);">
+          Trainer Oficial<br><span style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-style:italic; font-weight:400; letter-spacing:0.08em; color:var(--gold-light);">@maxymova_official</span>
+        </div>
+      </div>
+
+      <div class="about-text reveal reveal-delay" style="padding:0 20px;">
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <span class="section-eyebrow-text">Conoce a Cathy</span>
+        </div>
+        <h2 class="section-title" style="margin-bottom:20px; font-size:clamp(2.4rem,3.8vw,3.6rem); line-height:1.08;">¡Hola,<br>soy <em>Cathy</em></h2>
+        <p class="about-body" style="text-align:justify; font-size:1.05rem; color:var(--charcoal); margin-bottom:24px; line-height:1.72;">
+          <strong>La mente y el corazón detrás de Lashes_Cathylash.</strong> Mi camino en el mundo de pestañas comenzó hace más de 11 años, impulsado por una profunda pasión por la belleza y el deseo de ayudar a cada mujer a proyectar su mejor versión con confianza y estilo.
+        </p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.7rem; color:var(--gold-dark); margin-bottom:12px; font-style:italic;">¿Qué me hace diferente?</h3>
+        <p class="about-body" style="text-align:justify; margin-bottom:28px;">
+          No creo en soluciones genéricas. Mi enfoque es 100% personalizado: analizo tus facciones, escucho tus preferencias y cuido cada detalle para que el resultado se adapte perfectamente a tu rostro.
+        </p>
+
+        <div class="about-credentials" style="margin-bottom:28px; gap:12px;">
+          <h3 style="font-size:0.72rem; font-weight:500; text-transform:uppercase; letter-spacing:0.16em; color:var(--charcoal); margin-bottom:10px;">Mis especialidades</h3>
+          <div class="about-credential">
+            <div class="about-credential-line" style="background:var(--gold-dark);"></div>
+            <div class="about-credential-text" style="font-size:0.96rem;">✨ <strong>Extensiones de pestañas</strong> — técnica clásico, Volumen Ruso y Fibras Tecnologícas</div>
+          </div>
+          <div class="about-credential" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
+  <div style="display: flex; gap: 16px; align-items: flex-start; flex: 1; min-width: 250px;">
+    <div class="about-credential-line" style="background:var(--gold-dark);"></div>
+    <div class="about-credential-text" style="font-size:0.88rem;">
+      🌀 <strong>Lifting Coreano</strong> — Técnica avanzada para resultados saludables y personalizados.
+    </div>
+  </div>
+  
+  <a href="#" onclick="openTab(event, 'tab-academia'); switchCurso(3); return false;" class="btn-premium-gold">
+    <span>Ver Master</span>
+    <div class="shimmer"></div>
+  </a>
+</div>
+          <div class="about-credential">
+            <div class="about-credential-line" style="background:var(--gold-dark);"></div>
+            <div class="about-credential-text" style="font-size:0.96rem;">💡 <strong>Pestaña con técnica LED</strong> — Técnica pionera en Zaragoza duración hasta 8 semanas de retención, la mejor opción para vacaciones </div>
+          </div>
+          <div class="about-credential">
+            <div class="about-credential-line" style="background:var(--gold-dark);"></div>
+            <div class="about-credential-text" style="font-size:0.96rem;">🖋️ <strong>Laminado de cejas y diseño de cejas con color profesional</strong></div>
+          </div>
+        </div>
+
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.18rem; font-style:italic; font-weight:300; color:var(--warm-grey); line-height:1.7; border-left:2px solid var(--gold); padding-left:20px; margin-bottom:38px;">
+          "Mi prioridad es tu seguridad y bienestar. Cada visita es una experiencia de cuidado dedicada solo a ti."
+        </p>
+        <a href="https://wa.me/34622106687" class="btn-primary" target="_blank">Pedir cita con Cathy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ② TRANSFORMAR TU MIRADA — foto brocha -->
+  <section id="transformar" style="min-height:100vh; display:grid; grid-template-columns:1fr 1fr; padding:0;">
+    <!-- Texto izquierda -->
+    <div class="reveal" style="display:flex; flex-direction:column; justify-content:center; padding:80px 60px 80px 80px; background:var(--cream); position:relative; z-index:1;">
+      <div class="section-eyebrow" style="margin-bottom:28px;">
+        <div class="section-eyebrow-line"></div>
+        <span class="section-eyebrow-text">Zaragoza · España</span>
+      </div>
+      <h2 style="font-family:'Playfair Display',serif; font-size:clamp(2.4rem,3.8vw,3.8rem); font-weight:400; line-height:1.1; margin-bottom:28px; color:var(--charcoal);">
+        ¿Lista para<br><em style="font-style:italic; color:var(--gold-dark);">transformar</em><br>tu mirada?
+      </h2>
+      <div style="width:52px; height:1px; background:var(--gold); margin-bottom:30px;"></div>
+      <p style="font-family:'Cormorant Garamond',serif; font-size:1.18rem; font-weight:300; font-style:italic; color:var(--warm-grey); line-height:1.78; margin-bottom:20px; max-width:420px;">
+        Especialistas en extensiones de pestañas, lifting coreano y pestaña led. El estudio de referencia en Zaragoza.
+      </p>
+      <div style="display:flex; flex-direction:column; gap:9px; margin-bottom:44px;">
+        <div style="font-size:0.78rem; font-weight:300; color:var(--warm-grey); letter-spacing:0.1em; display:flex; align-items:center; gap:14px;">
+          <span style="display:inline-block; width:20px; height:1px; background:var(--gold-light); flex-shrink:0;"></span>Extensiones &middot; Volumen Ruso
+        </div>
+        <div style="font-size:0.78rem; font-weight:300; color:var(--warm-grey); letter-spacing:0.1em; display:flex; align-items:center; gap:14px;">
+          <span style="display:inline-block; width:20px; height:1px; background:var(--gold-light); flex-shrink:0;"></span>Pestaña técnica led
+        </div>
+        <div style="font-size:0.78rem; font-weight:300; color:var(--warm-grey); letter-spacing:0.1em; display:flex; align-items:center; gap:14px;">
+          <span style="display:inline-block; width:20px; height:1px; background:var(--gold-light); flex-shrink:0;"></span>Lifting Coreano &middot; 6–8 semanas de efecto
+        </div>
+        <div style="font-size:0.78rem; font-weight:300; color:var(--warm-grey); letter-spacing:0.1em; display:flex; align-items:center; gap:14px;">
+          <span style="display:inline-block; width:20px; height:1px; background:var(--gold-light); flex-shrink:0;"></span>Trainer Oficial De Maximova en Zaragoza  &middot; Formación Certificada
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px; max-width:360px;">
+        <a href="#" onclick="openTab(event,'tab-servicios');return false;" class="btn-outline" style="text-align:center;">Ver todos los servicios &rarr;</a>
+        <p style="font-size:0.7rem; font-weight:300; color:var(--warm-grey); font-style:italic; text-align:center; margin-top:4px;">📍 Zaragoza &middot; +34 622 10 66 87</p>
+      </div>
+    </div>
+    <!-- Foto brocha derecha -->
+    <div style="position:relative; overflow:hidden; background:var(--blush);">
+      <img src="WhatsApp%20Image%202026-04-06%20at%2023.55.50.jpeg" alt="Cathy — estudio Lashes Cathylash"
+        style="width:100%; height:100%; object-fit:cover; object-position:center top; display:block; min-height:100vh;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to right, rgba(253,250,247,0.18), transparent 40%);"></div>
+    </div>
+  </section>
+
+  </div><!-- /tab-home -->
+
+  <!-- FORMACIÓN -->
+  <div id="tab-academia" class="tab-content">
+    <style>
+      .cursos-nav-container { padding:80px 80px 60px; background:var(--cream); }
+      .cursos-nav { 
+        display:grid; 
+        grid-template-columns:repeat(3,1fr); 
+        gap:40px; 
+        max-width:1200px; 
+        margin:0 auto;
+      }
+      .curso-nav-item { 
+        background:#fff; 
+        padding:60px 48px; 
+        cursor:pointer; 
+        transition:all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); 
+        border:1px solid rgba(196,168,130,0.1); 
+        text-align:left; 
+        position:relative; 
+        display:flex; 
+        flex-direction:column;
+        justify-content: flex-end;
+        min-height:320px;
+        overflow:hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      }
+      .curso-nav-item::before {
+        content: attr(data-num);
+        position:absolute;
+        top:-30px;
+        right:-20px;
+        font-family:'Cormorant Garamond', serif;
+        font-size:12rem;
+        font-weight:300;
+        color:rgba(196,168,130,0.05);
+        line-height:1;
+        transition: all 0.7s ease;
+      }
+      .curso-nav-item:hover { 
+        transform: translateY(-12px); 
+        box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+        border-color: var(--gold);
+      }
+      .curso-nav-item:hover::before {
+        transform: scale(1.1) rotate(-5deg) translateX(-15px);
+        color:rgba(196,168,130,0.08);
+      }
+      
+      .curso-nav-item.active-curso { 
+        border-color: var(--gold);
+        background: var(--blush);
+      }
+      .curso-nav-item.active-curso::after { 
+        content:''; 
+        position:absolute; 
+        bottom:0; 
+        left:0; 
+        width:100%; 
+        height:4px; 
+        background:var(--gold-dark); 
+      }
+
+      .curso-nav-num-small { 
+        font-family:'Cormorant Garamond',serif; 
+        font-size:1.6rem; 
+        font-style:italic;
+        color:var(--gold-dark); 
+        line-height:1; 
+        margin-bottom:20px; 
+        position:relative;
+        z-index:2;
+      }
+      .curso-nav-title { 
+        font-size:0.8rem; 
+        font-weight:500; 
+        letter-spacing:0.25em; 
+        text-transform:uppercase; 
+        color:var(--charcoal); 
+        line-height:1.7;
+        position:relative;
+        z-index:2;
+      }
+      
+      /* Estilo Especial Premium (Modo Noche / Lujo) */
+      .curso-nav-item.premium-btn { 
+        background:var(--charcoal); 
+        border-color: var(--charcoal);
+      }
+      .curso-nav-item.premium-btn .curso-nav-title { color:var(--cream); }
+      .curso-nav-item.premium-btn .curso-nav-num-small { color:var(--gold-light); }
+      .curso-nav-item.premium-btn::before { color:rgba(253,250,247,0.03); }
+      
+      .premium-badge { 
+        font-size:0.5rem; 
+        letter-spacing:0.4em; 
+        color:var(--gold-light); 
+        border:1px solid rgba(196,168,130,0.4); 
+        padding:5px 14px; 
+        display:inline-block; 
+        margin-bottom:24px; 
+        align-self:flex-start;
+        position:relative;
+        z-index:2;
+      }
+      .curso-nav-item.premium-btn:hover { 
+        background: #181818; 
+        border-color: var(--gold-dark);
+      }
+      
+      .curso-section { 
+        display:none; 
+        padding:140px 80px; 
+        text-align:center; 
+        background:rgba(253,250,247,0.4); 
+        min-height:550px; 
+        flex-direction:column; 
+        align-items:center; 
+        justify-content:center; 
+        border-top: 1px solid rgba(196,168,130,0.1);
+      }
+      .curso-section.active-curso-sec { display:flex; }
+
+      .placeholder-text {
+        font-family:'Cormorant Garamond', serif;
+        font-size: 1.35rem;
+        font-style: italic;
+        color: var(--warm-grey);
+        max-width: 600px;
+        margin-top: 30px;
+        line-height: 1.7;
+      }
+      
+      @media(max-width:1100px){
+        .cursos-nav-container { padding:40px 30px; }
+        .cursos-nav { grid-template-columns:1fr 1fr; gap:20px; }
+      }
+      @media(max-width:768px){
+        .cursos-nav { grid-template-columns:1fr; }
+        .curso-nav-item { min-height:260px; padding:40px; }
+        .curso-section { padding:100px 24px; }
+      }
+    </style>
+
+    <div class="cursos-nav-container">
+      <div class="cursos-nav">
+        <div class="curso-nav-item active-curso" onclick="switchCurso(1)" data-num="01">
+          <div class="curso-nav-num-small">01</div>
+          <div class="curso-nav-title">Curso Individual de<br>Pestañas</div>
+        </div>
+        <div class="curso-nav-item" onclick="switchCurso(2)" data-num="02">
+          <div class="curso-nav-num-small">02</div>
+          <div class="curso-nav-title">Lifting y Laminado<br>Técnicas Avanzadas</div>
+        </div>
+        <div class="curso-nav-item premium-btn" onclick="switchCurso(3)" data-num="03">
+          <div class="premium-badge">PREMIUM · EXCLUSIVO</div>
+          <div class="curso-nav-num-small">03</div>
+          <div class="curso-nav-title">Master Lifting Premium<br>Técnica Fusión</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENEDORES DE CURSOS -->
+    <div id="curso-1" class="curso-section active-curso-sec" style="padding:0; min-height:auto; text-align:left; background:transparent; border-top:none;">
+      
+      <style>
+        .c1-hero { position:relative; min-height:85vh; display:flex; align-items:center; padding:120px 80px; overflow:hidden; }
+        .c1-hero-title { font-size:clamp(2.5rem, 5vw, 4.5rem); }
+        .c1-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:80px; align-items:center; padding:120px 80px; background:var(--cream); }
+        .c1-modules { padding:120px 80px; background:var(--blush); }
+        .c1-footer-grid { display:grid; grid-template-columns:1.2fr 0.8fr; gap:80px; align-items:start; padding:120px 80px; background:var(--charcoal); color:var(--cream); }
+        
+        .faq-item.open .faq-body { max-height:400px; }
+        .faq-item.open span.faq-icon { transform:rotate(45deg); }
+        .faq-icon { display:inline-block; transition:transform 0.3s; }
+        
+        @media(max-width:1024px) {
+          .c1-grid, .c1-footer-grid { grid-template-columns:1fr; gap:50px; }
+        }
+        @media(max-width:768px) {
+          .c1-hero, .c1-grid, .c1-modules, .c1-footer-grid { padding:60px 24px; }
+          .c1-hero { min-height: 70vh; }
+        }
+      </style>
+
+      <!-- 1. Hero Section -->
+      <section class="c1-hero">
+        <div style="position:absolute; inset:0; z-index:0;">
+          <img src="https://images.unsplash.com/photo-1512496015851-a1cbf6246411?auto=format&fit=crop&q=80&w=2000" alt="Curso Extensiones de Pestañas" style="width:100%; height:100%; object-fit:cover; filter: brightness(0.65);">
+          <div style="position:absolute; inset:0; background: linear-gradient(90deg, rgba(28,28,28,0.95) 0%, rgba(28,28,28,0.6) 60%, transparent 100%);"></div>
+        </div>
+        <div style="position:relative; z-index:1; max-width:650px;">
+          <div class="section-eyebrow" style="margin-bottom:24px;">
+            <div class="section-eyebrow-line" style="background:var(--gold-light);"></div>
+            <span class="section-eyebrow-text" style="color:var(--gold-light);">Academia Oficial</span>
+          </div>
+          <h1 class="c1-hero-title" style="font-family:'Playfair Display', serif; font-weight:400; color:var(--cream); line-height:1.1; margin-bottom:24px;">
+            Curso Profesional de<br><em style="font-style:italic; color:var(--gold-light);">Extensiones de Pestañas</em>
+          </h1>
+          <p style="font-size:1.1rem; font-weight:300; color:rgba(253,250,247,0.85); line-height:1.7; margin-bottom:40px; font-family:'Jost', sans-serif;">
+            Conviértete en una Lash Artist profesional con una formación 100% personalizada y práctica real desde el primer día.
+          </p>
+          <a href="https://wa.me/34622106687?text=Hola%20Cathy!%20Deseo%20reservar%20mi%20plaza%20para%20el%20Curso%20Individual." target="_blank" class="btn-primary" style="background:var(--gold-dark); border-color:var(--gold-dark);">Reservar Plaza</a>
+        </div>
+      </section>
+
+      <!-- 2. Presentación Instructora -->
+      <section class="c1-grid">
+        <div style="position:relative; width: 100%; max-width: 500px; margin: 0 auto;">
+          <img src="WhatsApp%20Image%202026-04-06%20at%2023.41.05.jpeg" alt="Catherine Risco - Instructora" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+          <div style="position:absolute; bottom:-20px; right:-20px; background:var(--charcoal); padding:30px 40px; border-left:4px solid var(--gold-dark);">
+            <div style="font-family:'Cormorant Garamond', serif; font-size:3.5rem; color:var(--gold-light); line-height:1;">+11</div>
+            <div style="font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--cream); margin-top:8px;">Años de exp.</div>
+          </div>
+        </div>
+        <div>
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line"></div>
+            <span class="section-eyebrow-text">Tu Mentora</span>
+          </div>
+          <h2 class="section-title">Conoce a<br><em>Catherine Risco</em></h2>
+          <p style="font-family:'Cormorant Garamond', serif; font-size:1.35rem; font-style:italic; color:var(--gold-dark); margin-bottom:24px;">Especialista en lifting y extensiones de pestañas</p>
+          <p style="font-size:1rem; font-weight:300; color:var(--warm-grey); line-height:1.8; margin-bottom:24px;">
+            Mi objetivo es ayudarte a ser una profesional segura, precisa y capaz de ofrecer resultados impecables.
+          </p>
+          <div style="padding:24px; border-left:2px solid var(--gold); background:var(--blush);">
+            <p style="font-size:0.95rem; font-style:italic; color:var(--charcoal); line-height:1.6; font-weight: 400;">
+              "Aprenderás sin presión, a tu ritmo y con práctica real. Mi propósito es transmitirte las técnicas que me han posicionado en el sector, garantizando que puedas aplicarlas con confianza."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Curriculum -->
+      <section class="c1-modules">
+        <div style="text-align:center; max-width:700px; margin:0 auto 60px;">
+          <div class="section-eyebrow" style="justify-content:center;">
+            <div class="section-eyebrow-line"></div>
+            <span class="section-eyebrow-text">Programa Formativo</span>
+            <div class="section-eyebrow-line"></div>
+          </div>
+          <h2 class="section-title">¿Qué vas a <em>aprender?</em></h2>
+          <p class="section-intro" style="margin:20px auto 0;">Un temario completo y estructurado paso a paso para garantizar tu éxito profesional desde el primer set de pestañas.</p>
+        </div>
+
+        <div style="max-width:850px; margin:0 auto; display:flex; flex-direction:column; gap:16px;">
+          
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M1</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Fundamentos y Salud</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Anatomía del ojo y ciclo de crecimiento del pelo.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Seguridad, higiene y bioseguridad en la cabina.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Manejo de alergias y contraindicaciones.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M2</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Herramientas y Materiales</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Uso de pinzas, adhesivos y removedores.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Configuración del ambiente de trabajo y ventilación correcta.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M3</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Técnicas de Aplicación</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Técnica Clásica (1:1).</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Técnicas de Volumen (abanicos tecnológicos) e Híbrida.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Colocación, dirección y aislamiento correcto de la pestaña.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M4</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Diseño Personalizado (Mapping)</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Estilos: Natural, Cat Eye, Doll Eye, Fox Eye.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Ajuste del diseño visagista según la forma del ojo.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M5</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Mantenimiento y Retiro</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Técnica de relleno impecable y evaluación del set.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Retiro seguro con gel o crema.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M6</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Negocio y Atención al Cliente</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Ficha de cliente y cuidados posteriores.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Resolución de problemas: retención débil e irritaciones.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 4. Metodología y Beneficios + Inversión -->
+      <section class="c1-footer-grid">
+        <!-- Metodología -->
+        <div>
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line" style="background:var(--gold-light);"></div>
+            <span class="section-eyebrow-text" style="color:var(--gold-light);">Metodología</span>
+          </div>
+          <h2 class="section-title">Por qué elegir esta <em>formación</em></h2>
+          
+          <div style="display:flex; flex-direction:column; gap:32px; margin-top:48px;">
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">👁️</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Práctica Real</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Prácticas supervisadas primero en maniquí y luego en dos modelos reales para desarrollar total confianza.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">⭐</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Formación VIP</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Grupo privado de WhatsApp y asesoramiento continuo post-curso para nunca sentirte sola en tu aprendizaje.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">🎁</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Material Incluido</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Llevarás a casa un Kit Profesional completo para empezar a trabajar de inmediato y tu manual digital.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">📜</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Acreditación</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Entrega de diploma acreditativo de culminación exitosa, clave para certificar tus habilidades.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inversión -->
+        <div style="background:var(--cream); padding:50px 40px; text-align:center; position:relative; border-top: 4px solid var(--gold-dark);">
+          <div style="position:absolute; top:-16px; left:50%; transform:translateX(-50%); background:var(--gold-dark); color:var(--cream); font-size:0.6rem; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; padding:6px 16px;">Plazas Limitadas</div>
+          
+          <h3 style="font-family:'Playfair Display', serif; font-size:1.8rem; font-weight:400; color:var(--charcoal); margin-bottom:12px; margin-top:10px;">Inversión del Curso</h3>
+          <p style="font-family:'Cormorant Garamond', serif; font-size:1.1rem; color:var(--warm-grey); font-style:italic; margin-bottom:30px;">Curso VIP Presencial 1 a 1</p>
+          
+          <div style="font-family:'Playfair Display', serif; font-size:4.5rem; font-weight:400; color:var(--gold-dark); line-height:1; margin-bottom:30px;">
+            600<span style="font-size:2rem; font-family:'Jost', sans-serif; font-weight:300;">€</span>
+          </div>
+          
+          <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:16px; margin-bottom:40px; text-align:left;">
+            <li style="display:flex; align-items:center; gap:12px; font-size:0.9rem; color:var(--warm-grey);"><span style="color:var(--gold-dark);">✓</span> Kit Profesional completo</li>
+            <li style="display:flex; align-items:center; gap:12px; font-size:0.9rem; color:var(--warm-grey);"><span style="color:var(--gold-dark);">✓</span> Manual teórico y práctico</li>
+            <li style="display:flex; align-items:center; gap:12px; font-size:0.9rem; color:var(--warm-grey);"><span style="color:var(--gold-dark);">✓</span> Prácticas con 2 modelos reales</li>
+            <li style="display:flex; align-items:center; gap:12px; font-size:0.9rem; color:var(--warm-grey);"><span style="color:var(--gold-dark);">✓</span> Diploma acreditativo y aval</li>
+            <li style="display:flex; align-items:center; gap:12px; font-size:0.9rem; color:var(--warm-grey);"><span style="color:var(--gold-dark);">✓</span> Asesoramiento continuo</li>
+          </ul>
+
+          <a href="https://wa.me/34622106687?text=Hola%20Cathy!%20Me%20gustaría%20reservar%20mi%20plaza%20para%20el%20Curso%20Individual%20de%20Pestañas." target="_blank" class="btn-primary" style="width:100%; text-align:center; justify-content:center;">Reservar mi plaza</a>
+          <p style="font-size:0.7rem; color:var(--warm-grey); font-style:italic; margin-top:20px;">*Consulta para posibilidad de pago fraccionado.</p>
+        </div>
+        
+      </section>
+    </div>
+
+    <div id="curso-2" class="curso-section" style="padding:0; min-height:auto; text-align:left; background:transparent; border-top:none;">
+      
+      <!-- 1. Hero Section -->
+      <section class="c1-hero">
+        <div style="position:absolute; inset:0; z-index:0;">
+          <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&q=80&w=2000" alt="Lifting y Técnicas Avanzadas" style="width:100%; height:100%; object-fit:cover; filter: brightness(0.65);">
+          <div style="position:absolute; inset:0; background: linear-gradient(90deg, rgba(28,28,28,0.95) 0%, rgba(28,28,28,0.6) 60%, transparent 100%);"></div>
+        </div>
+        <div style="position:relative; z-index:1; max-width:650px;">
+          <div class="section-eyebrow" style="margin-bottom:24px;">
+            <div class="section-eyebrow-line" style="background:var(--gold-light);"></div>
+            <span class="section-eyebrow-text" style="color:var(--gold-light);">Nivel Avanzado</span>
+          </div>
+          <h1 class="c1-hero-title" style="font-family:'Playfair Display', serif; font-weight:400; color:var(--cream); line-height:1.1; margin-bottom:24px;">
+            Lifting y Técnicas Avanzadas de<br><em style="font-style:italic; color:var(--gold-light);">Pestañas y Cejas</em>
+          </h1>
+          <p style="font-size:1.1rem; font-weight:300; color:rgba(253,250,247,0.85); line-height:1.7; margin-bottom:40px; font-family:'Jost', sans-serif;">
+            Bajo la mentoría de Catherine Risco, Trainer Oficial de Maxymova. Olvídate de cursos masivos: formación 100% personalizada.
+          </p>
+          <a href="https://wa.me/34622106687?text=Hola%20Cathy!%20Deseo%20reservar%20mi%20plaza%20para%20Lifting%20y%20Técnicas%20Avanzadas." target="_blank" class="btn-primary" style="background:var(--gold-dark); border-color:var(--gold-dark);">Reservar Plaza (100€)</a>
+        </div>
+      </section>
+
+      <!-- 2. Por qué elegir esta formación -->
+      <section class="c1-grid">
+        <div style="position:relative; width: 100%; max-width: 500px; margin: 0 auto;">
+          <img src="WhatsApp%20Image%202026-04-06%20at%2023.55.50.jpeg" alt="Detalle lifting" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+          <div style="position:absolute; bottom:-20px; right:-20px; background:var(--charcoal); padding:30px 40px; border-left:4px solid var(--gold-dark);">
+            <div style="font-family:'Playfair Display', serif; font-size:1.8rem; color:var(--gold-light); line-height:1.2; text-align:center;">Mentora<br><em style="font-style:italic;">Oficial</em></div>
+            <div style="font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--cream); margin-top:8px; text-align:center;">Maxymova</div>
+          </div>
+        </div>
+        <div>
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line"></div>
+            <span class="section-eyebrow-text">Garantía de Calidad</span>
+          </div>
+          <h2 class="section-title">¿Por qué elegir<br><em>esta formación?</em></h2>
+          <p style="font-size:1rem; font-weight:300; color:var(--warm-grey); line-height:1.8; margin-bottom:32px;">
+            Aquí tú eres la protagonista. Diseñamos un entorno enfocado en tu crecimiento técnico y profesional.
+          </p>
+          
+          <div style="display:flex; flex-direction:column; gap:24px;">
+            <div style="display:flex; gap:16px;">
+              <span style="font-size:1.2rem; color:var(--gold-dark);">🕊️</span>
+              <div>
+                <strong style="color:var(--charcoal); font-weight:500; display:block; margin-bottom:4px;">Sin Presión</strong>
+                <span style="color:var(--warm-grey); font-weight:300; font-size:0.95rem;">Aprendizaje a tu ritmo, con atención total en cada detalle de tu técnica.</span>
+              </div>
+            </div>
+            <div style="display:flex; gap:16px;">
+              <span style="font-size:1.2rem; color:var(--gold-dark);">✨</span>
+              <div>
+                <strong style="color:var(--charcoal); font-weight:500; display:block; margin-bottom:4px;">Resultados Impecables</strong>
+                <span style="color:var(--warm-grey); font-weight:300; font-size:0.95rem;">Aprende a trabajar con precisión para garantizar la salud de la pestaña y la ceja natural.</span>
+              </div>
+            </div>
+            <div style="display:flex; gap:16px;">
+              <span style="font-size:1.2rem; color:var(--gold-dark);">🤝</span>
+              <div>
+                <strong style="color:var(--charcoal); font-weight:500; display:block; margin-bottom:4px;">Apoyo Continuo</strong>
+                <span style="color:var(--warm-grey); font-weight:300; font-size:0.95rem;">Al terminar, no estarás sola; contarás con orientación y soporte post-curso.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Curriculum -->
+      <section class="c1-modules">
+        <div style="text-align:center; max-width:700px; margin:0 auto 60px;">
+          <div class="section-eyebrow" style="justify-content:center;">
+            <div class="section-eyebrow-line"></div>
+            <span class="section-eyebrow-text">Programa Formativo (8 Horas Intensivas)</span>
+            <div class="section-eyebrow-line"></div>
+          </div>
+          <h2 class="section-title">Temario del <em>Curso</em></h2>
+          <p class="section-intro" style="margin:20px auto 0;">Un recorrido desde las bases químicas hasta la aplicación práctica de arquitecturas avanzadas.</p>
+        </div>
+
+        <div style="max-width:850px; margin:0 auto; display:flex; flex-direction:column; gap:16px;">
+          
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M1</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Teoría y Química del Producto</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Introducción a la marca Maxymova y por qué es líder en el mercado.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Análisis del pelo: Ciclos de crecimiento y salud capilar.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Protocolos de seguridad e higiene profesional.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M2</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Técnicas Avanzadas de Lifting</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Elección correcta del molde según el tipo de ojo.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Tiempos de exposición exactos para resultados duraderos.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Uso de sueros nutritivos para un acabado con brillo y fuerza.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M3</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Arquitectura y Laminado de Cejas</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Diseño de cejas personalizado según la morfología del rostro.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Depilación Profesional: Técnica mixta de cera y pinza.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Cómo lograr cejas densas y disciplinadas sin perder naturalidad.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M4</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Práctica en Modelos Reales</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Práctica supervisada con 2 modelos bajo el ojo experto de tu instructora.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Corrección de postura y manejo de herramientas en tiempo real.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Beneficios Exclusivos e Inversión -->
+      <section class="c1-footer-grid">
+        <!-- Beneficios -->
+        <div>
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line" style="background:var(--gold-light);"></div>
+            <span class="section-eyebrow-text" style="color:var(--gold-light);">Plus Añadido</span>
+          </div>
+          <h2 class="section-title">Beneficios <em>Exclusivos</em></h2>
+          
+          <div style="display:flex; flex-direction:column; gap:32px; margin-top:48px;">
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">📜</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Certificación Internacional</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Acreditada por Maxymova Italia, dándote prestigio y respaldo profesional ante tus clientas.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">📖</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Doble Manual de Estudio</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Versión impresa para consulta directa en cabina y versión digital para llevar siempre contigo.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">🛒</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Descuento VIP del 10%</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Descuento permanente en todos los productos de la tienda Maxymova para aumentar tus márgenes de beneficio.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">☕</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Experiencia Premium</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Coffee break incluido y materiales de altísima gama disponibles para las prácticas durante la formación.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inversión -->
+        <div style="background:var(--cream); padding:50px 40px; text-align:center; position:relative; border-top: 4px solid var(--gold-dark);">
+          <div style="position:absolute; top:-16px; left:50%; transform:translateX(-50%); background:var(--gold-dark); color:var(--cream); font-size:0.6rem; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; padding:6px 16px;">Elige tu modalidad</div>
+          
+          <h3 style="font-family:'Playfair Display', serif; font-size:1.8rem; font-weight:400; color:var(--charcoal); margin-bottom:24px; margin-top:10px;">Opciones de Inversión</h3>
+          
+          <div style="display:flex; flex-direction:column; gap:24px; margin-bottom:30px; text-align:left;">
+            
+            <div style="border:1px solid var(--gold); padding:24px; position:relative;">
+              <div style="position:absolute; top:-12px; right:24px; background:var(--charcoal); color:var(--gold-light); font-size:0.6rem; padding:4px 12px; letter-spacing:0.1em; text-transform:uppercase;">Más Elegida</div>
+              <h4 style="font-family:'Playfair Display', serif; font-size:1.4rem; color:var(--charcoal); margin-bottom:8px;">Elite con Kit</h4>
+              <div style="font-size:2rem; color:var(--gold-dark); font-family:'Playfair Display', serif; line-height:1; margin-bottom:12px;">400€</div>
+              <p style="font-size:0.85rem; color:var(--warm-grey); line-height:1.6;">Formación completa + Kit profesional Maxymova integral para empezar a facturar mañana mismo.</p>
+            </div>
+
+            <div style="border:1px solid rgba(196,168,130,0.3); padding:24px;">
+              <h4 style="font-family:'Playfair Display', serif; font-size:1.4rem; color:var(--charcoal); margin-bottom:8px;">Formación Pro</h4>
+              <div style="font-size:2rem; color:var(--gold-dark); font-family:'Playfair Display', serif; line-height:1; margin-bottom:12px;">300€</div>
+              <p style="font-size:0.85rem; color:var(--warm-grey); line-height:1.6;">Formación completa utilizando en clase todo nuestro material de estudio, sin kit para llevar.</p>
+            </div>
+
+          </div>
+
+          <div style="background:rgba(196,168,130,0.15); padding:16px; margin-bottom:30px; border-left:3px solid var(--gold-dark);">
+            <p style="font-size:0.85rem; color:var(--charcoal); font-weight:500; margin-bottom:4px; text-align:left;">📌 Reserva tu plaza con 100€</p>
+            <p style="font-size:0.8rem; color:var(--warm-grey); text-align:left;">El importe restante se abona cómodamente el mismo día del curso.</p>
+          </div>
+
+          <a href="https://wa.me/34622106687?text=Hola%20Cathy!%20Me%20gustaría%20reservar%20mi%20plaza%20para%20Lifting%20y%20Técnicas%20Avanzadas." target="_blank" class="btn-primary" style="width:100%; text-align:center; justify-content:center;">Reservar mi plaza</a>
+        </div>
+        
+      </section>
+    </div>
+
+    <div id="curso-3" class="curso-section" style="padding:0; min-height:auto; text-align:left; background:transparent; border-top:none;">
+      
+      <!-- 1. Hero Section -->
+      <section class="c1-hero">
+        <div style="position:absolute; inset:0; z-index:0;">
+          <img src="https://images.unsplash.com/photo-1512496015851-a1cbf6246411?auto=format&fit=crop&q=80&w=2000" alt="Curso Advanced Fusion" style="width:100%; height:100%; object-fit:cover; filter: brightness(0.65);">
+          <div style="position:absolute; inset:0; background: linear-gradient(90deg, rgba(28,28,28,0.95) 0%, rgba(28,28,28,0.6) 60%, transparent 100%);"></div>
+        </div>
+        <div style="position:relative; z-index:1; max-width:650px;">
+          <div class="section-eyebrow" style="margin-bottom:24px;">
+            <div class="section-eyebrow-line" style="background:var(--gold-light);"></div>
+            <span class="section-eyebrow-text" style="color:var(--gold-light);">Premium · Exclusivo</span>
+          </div>
+          <h1 class="c1-hero-title" style="font-family:'Playfair Display', serif; font-weight:400; color:var(--cream); line-height:1.1; margin-bottom:24px;">
+            Curso de Laminación Avanzada<br><em style="font-style:italic; color:var(--gold-light);">Técnica Advanced Fusion</em>
+          </h1>
+          <p style="font-size:1.1rem; font-weight:300; color:rgba(253,250,247,0.85); line-height:1.7; margin-bottom:40px; font-family:'Jost', sans-serif;">
+            Domina la mirada del futuro. Conviértete en especialista de la técnica italiana que está revolucionando los salones europeos.
+          </p>
+          <a href="https://wa.me/34622106687?text=Hola%20Cathy!%20Deseo%20reservar%20mi%20plaza%20para%20la%20Técnica%20Fusión." target="_blank" class="btn-primary" style="background:var(--gold-dark); border-color:var(--gold-dark);">Reservar Plaza (100€)</a>
+        </div>
+      </section>
+
+      <!-- 2. Por qué elegir -->
+      <section class="c1-grid">
+        <div style="position:relative; width: 100%; max-width: 500px; margin: 0 auto;">
+          <img src="WhatsApp%20Image%202026-04-06%20at%2023.41.05.jpeg" alt="Técnica Advanced Fusion" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+          <div style="position:absolute; bottom:-20px; right:-20px; background:var(--charcoal); padding:30px 40px; border-left:4px solid var(--gold-dark);">
+            <div style="font-family:'Playfair Display', serif; font-size:1.8rem; color:var(--gold-light); line-height:1.2; text-align:center;">Advanced<br><em style="font-style:italic;">Fusion</em></div>
+            <div style="font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--cream); margin-top:8px; text-align:center;">Maxymova</div>
+          </div>
+        </div>
+        <div>
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line"></div>
+            <span class="section-eyebrow-text">Impulsa tu carrera</span>
+          </div>
+          <h2 class="section-title">¿Por qué elegir<br><em>este curso?</em></h2>
+          <p style="font-size:1rem; font-weight:300; color:var(--warm-grey); line-height:1.8; margin-bottom:32px;">
+            El mercado actual busca perfiles polivalentes que dominen el Lifting y Laminado de pestañas y cejas con acabados impecables, buscando siempre la salud capilar.
+          </p>
+          
+          <div style="display:flex; flex-direction:column; gap:24px;">
+            <div style="display:flex; gap:16px;">
+              <span style="font-size:1.2rem; color:var(--gold-dark);">💡</span>
+              <div>
+                <strong style="color:var(--charcoal); font-weight:500; display:block; margin-bottom:4px;">Innovación Exclusiva</strong>
+                <span style="color:var(--warm-grey); font-weight:300; font-size:0.95rem;">Aprende la Técnica ADVANCED FUSION con Adhesive Powder Maxymova. Sin pegamento clásico, menos tiempo y curvatura perfecta.</span>
+              </div>
+            </div>
+            <div style="display:flex; gap:16px;">
+              <span style="font-size:1.2rem; color:var(--gold-dark);">🌿</span>
+              <div>
+                <strong style="color:var(--charcoal); font-weight:500; display:block; margin-bottom:4px;">Salud y Nutrición</strong>
+                <span style="color:var(--warm-grey); font-weight:300; font-size:0.95rem;">Aplica activos como queratina, vitaminas y extractos botánicos para regenerar la pestaña mientras la embelleces.</span>
+              </div>
+            </div>
+            <div style="display:flex; gap:16px;">
+              <span style="font-size:1.2rem; color:var(--gold-dark);">⏱️</span>
+              <div>
+                <strong style="color:var(--charcoal); font-weight:500; display:block; margin-bottom:4px;">Alto Impacto</strong>
+                <span style="color:var(--warm-grey); font-weight:300; font-size:0.95rem;">Ofrece servicios de larga duración (de 6 a 8 semanas), fidelizando a tus clientas desde la primera cita.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Curriculum -->
+      <section class="c1-modules">
+        <div style="text-align:center; max-width:700px; margin:0 auto 60px;">
+          <div class="section-eyebrow" style="justify-content:center;">
+            <div class="section-eyebrow-line"></div>
+            <span class="section-eyebrow-text">Contenido Premium</span>
+            <div class="section-eyebrow-line"></div>
+          </div>
+          <h2 class="section-title">Lo que <em>aprenderás</em></h2>
+          <p class="section-intro" style="margin:20px auto 0;">Formación 100% personalizada y práctica para que salgas lista para trabajar.</p>
+        </div>
+
+        <div style="max-width:850px; margin:0 auto; display:flex; flex-direction:column; gap:16px;">
+          
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M1</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Dominio de Adhesivos</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Diferencias clave entre pegamento hidrosoluble y opciones innovadoras.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Uso experto del Green Lash Balm.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Manejo y beneficios del revolucionario Adhesive Powder.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M2</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Técnicas Avanzadas</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Protocolos paso a paso de metodologías.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Metodología Advanced.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Metodología exclusiva Advanced Fusion.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M3</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Resolución de Problemas y Asesoramiento</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Capacidad crítica para identificar inconvenientes en el proceso.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Solución inmediata a cualquier problema durante el tratamiento.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Asesoramiento profesional y guía de mantenimiento post-tratamiento.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" style="background:var(--cream); cursor:pointer; border:1px solid rgba(196,168,130,0.3);" onclick="this.classList.toggle('open')">
+            <div style="padding:28px 36px; display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; align-items:center; gap:20px;">
+                <span style="font-family:'Cormorant Garamond', serif; font-size:1.6rem; color:var(--gold-light); font-style:italic;">M4</span>
+                <span style="font-family:'Playfair Display', serif; font-size:1.2rem; color:var(--charcoal); font-weight: 500;">Práctica Real</span>
+              </div>
+              <span class="faq-icon" style="font-size:1.5rem; color:var(--gold-dark); font-weight:300;">+</span>
+            </div>
+            <div class="faq-body" style="padding:0 36px; max-height:0; overflow:hidden; transition:max-height 0.4s ease;">
+              <ul style="list-style:none; padding-bottom:32px; display:flex; flex-direction:column; gap:12px;">
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Desarrollo de prácticas con dos modelos reales.</li>
+                <li style="display:flex; gap:12px; font-size:0.95rem; color:var(--warm-grey); font-weight:300;"><span style="color:var(--gold-dark);">✓</span> Supervisión en todo momento de Catherine Risco.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Beneficios Exclusivos e Inversión -->
+      <section class="c1-footer-grid">
+        <!-- Beneficios -->
+        <div>
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line" style="background:var(--gold-light);"></div>
+            <span class="section-eyebrow-text" style="color:var(--gold-light);">Plus Añadido</span>
+          </div>
+          <h2 class="section-title">Detalles de la <em>Formación</em></h2>
+          
+          <div style="display:flex; flex-direction:column; gap:32px; margin-top:48px;">
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">📍</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Ubicación Exclusiva</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Centro MOON en Zaragoza.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">📜</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Certificación Oficial</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Certificado Acreditado por Maxymova Italia.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">📖</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Manual Completo</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Incluye manual digital e impreso.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px;">
+              <div style="width:48px; height:48px; border-radius:50%; background:rgba(196,168,130,0.15); border:1px solid rgba(196,168,130,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold-light); font-size:1.2rem;">☕</div>
+              <div>
+                <h4 style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:400; color:var(--cream); margin-bottom:6px;">Experiencia VIP</h4>
+                <p style="font-size:0.9rem; font-weight:300; color:rgba(253,250,247,0.7); line-height:1.6;">Coffee break incluido durante tu aprendizaje.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inversión -->
+        <div style="background:var(--cream); padding:50px 40px; text-align:center; position:relative; border-top: 4px solid var(--gold-dark);">
+          <div style="position:absolute; top:-16px; left:50%; transform:translateX(-50%); background:var(--gold-dark); color:var(--cream); font-size:0.6rem; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; padding:6px 16px;">Plazas limitadas</div>
+          
+          <h3 style="font-family:'Playfair Display', serif; font-size:1.8rem; font-weight:400; color:var(--charcoal); margin-bottom:24px; margin-top:10px;">Inversión en tu Futuro</h3>
+          
+          <div style="display:flex; flex-direction:column; gap:24px; margin-bottom:30px; text-align:left;">
+            
+            <div style="border:1px solid var(--gold); padding:24px; position:relative;">
+              <div style="position:absolute; top:-12px; right:24px; background:var(--charcoal); color:var(--gold-light); font-size:0.6rem; padding:4px 12px; letter-spacing:0.1em; text-transform:uppercase;">Recomendado</div>
+              <h4 style="font-family:'Playfair Display', serif; font-size:1.4rem; color:var(--charcoal); margin-bottom:8px;">Con Kit Incluido</h4>
+              <div style="font-size:2rem; color:var(--gold-dark); font-family:'Playfair Display', serif; line-height:1; margin-bottom:12px;">400€</div>
+              <p style="font-size:0.85rem; color:var(--warm-grey); line-height:1.6;">Incluye un Kit completo de materiales Maxymova para que apliques la técnica en tu salón al instante.</p>
+            </div>
+
+            <div style="border:1px solid rgba(196,168,130,0.3); padding:24px;">
+              <h4 style="font-family:'Playfair Display', serif; font-size:1.4rem; color:var(--charcoal); margin-bottom:8px;">Sin Kit</h4>
+              <div style="font-size:2rem; color:var(--gold-dark); font-family:'Playfair Display', serif; line-height:1; margin-bottom:12px;">300€</div>
+              <p style="font-size:0.85rem; color:var(--warm-grey); line-height:1.6;">Formación completa utilizando el material del centro en clase.</p>
+            </div>
+
+          </div>
+
+          <div style="background:rgba(196,168,130,0.15); padding:16px; margin-bottom:30px; border-left:3px solid var(--gold-dark);">
+            <p style="font-size:0.85rem; color:var(--charcoal); font-weight:500; margin-bottom:4px; text-align:left;">📌 Reserva tu plaza con 100€</p>
+            <p style="font-size:0.8rem; color:var(--warm-grey); text-align:left;">Se descuenta del total. Asegúrate un lugar, el 2026 es el año de las miradas saludables.</p>
+          </div>
+
+          <a href="https://wa.me/34622106687?text=Hola%20Cathy!%20Me%20gustaría%20reservar%20mi%20plaza%20para%20la%20Técnica%20Fusión." target="_blank" class="btn-primary" style="width:100%; text-align:center; justify-content:center;">Reservar mi plaza</a>
+        </div>
+        
+      </section>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- SERVICIOS -->
+  <div id="tab-servicios" class="tab-content">
+  <section class="services" id="servicios">
+    <div class="section-eyebrow reveal">
+      <div class="section-eyebrow-line"></div>
+      <span class="section-eyebrow-text">Tratamientos</span>
+    </div>
+    <h2 class="section-title reveal">Nuestros <em>Servicios</em></h2>
+    <p class="section-intro reveal">Cada tratamiento es diseñado a medida para potenciar tu mirada natural. Utilizamos exclusivamente materiales de primera calidad y técnicas de vanguardia.</p>
+
+    <!-- TRATAMIENTOS GRID -->
+    <div class="services-gallery reveal" style="margin-top: 60px;">
+      <style>
+        .service-card {
+    background: #fff;
+    border: 1px solid rgba(196,168,130,0.15);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+
+    /* AÑADE ESTAS LÍNEAS */
+    transform: scale(0.85); /* Reduce al 85% de su tamaño */
+    transform-origin: center; 
+}
+        }
+        .service-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+        .service-card-img {
+          width: 100%;
+          aspect-ratio: 4/5;
+          object-fit: cover;
+          transition: transform 0.6s ease;
+        }
+        .service-card:hover .service-card-img {
+          transform: scale(1.05);
+        }
+        .service-card-body {
+          padding: 30px;
+          text-align: center;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .service-card-title {
+          font-family: 'Playfair Display', serif;
+          font-size: 1.4rem;
+          color: var(--charcoal);
+          margin-bottom: 12px;
+        }
+        .service-card-desc {
+          font-size: 0.9rem;
+          font-weight: 300;
+          color: var(--warm-grey);
+          line-height: 1.6;
+        }
+        .sg-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: 30px;
+          margin-bottom: 60px;
+        }
+      </style>
+
+      <div class="sg-grid">
+        <!-- Card 1 -->
+        <div class="service-card">
+          <div style="overflow:hidden;"><img src="liftin coreano.jpeg" alt="Lifting Coreano" class="service-card-img"></div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Lifting Coreano</h3>
+            <p class="service-card-desc">Curvatura extrema y nutrición profunda. El secreto asiático para unas pestañas naturales de alto impacto.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+          <div style="overflow:hidden;"><img src="efecto foxy.jpeg" alt="Efecto Foxy" class="service-card-img"></div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Efecto Foxy</h3>
+            <p class="service-card-desc">Mirada rasgada y ultra seductora. Estiliza y alarga la forma de tu ojo logrando un delineado natural e invisible.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card">
+          <div style="overflow:hidden;"><img src="efecto wispy.jpeg" alt="Efecto Wispy" class="service-card-img"></div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Efecto Wispy</h3>
+            <p class="service-card-desc">El equilibrio perfecto entre volumen y textura. Un acabado texturizado, sofisticado y en plena tendencia.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card">
+          <div style="overflow:hidden;"><img src="efecto anime.jpeg" alt="Efecto Anime" class="service-card-img"></div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Efecto Anime</h3>
+            <p class="service-card-desc">Volumen marcado por picos definidos que imitan la estética de ojos de muñeca para una mirada protagonista.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card">
+          <div style="overflow:hidden;"><img src="volumen 3d.jpeg" alt="Volumen 3D" class="service-card-img"></div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Volumen 3D</h3>
+            <p class="service-card-desc">Profundidad y expresión multiplicada. Densidad sofisticada sin perder la elegancia del día a día.</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card">
+          <div style="overflow:hidden;"><img src="volumen 4d marron.jpeg" alt="Volumen 4D Marrón" class="service-card-img"></div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Volumen 4D Dark Brown</h3>
+            <p class="service-card-desc">Extra densidad en tonos tierra cálidos. Ideal para un contraste más suave y miradas luminosas.</p>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="service-card">
+          <div style="overflow:hidden;"><img src="efecto con colorr.jpeg" alt="Efecto con Color" class="service-card-img"></div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Efectos con Color</h3>
+            <p class="service-card-desc">Toques vibrantes y atrevidos. Personalizamos tu diseño con destellos de color para un acabado hipnótico.</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!-- Asesoramiento -->
+      <div style="background:var(--blush); padding:40px 30px; text-align:center; max-width:800px; margin:0 auto; border: 1px solid rgba(196,168,130,0.2);">
+        <p style="font-family:'Cormorant Garamond', serif; font-size:1.35rem; font-style:italic; font-weight:400; color:var(--charcoal); line-height:1.6; margin-bottom:28px;">¿Tienes dudas sobre qué efecto resaltará mejor tus facciones? Escríbeme y te asesoraré de manera totalmente personalizada. 💌</p>
+        <a href="https://wa.me/34622106687?text=Hola!%20Me%20gustaría%20un%20asesoramiento%20para%20elegir%20mi%20tratamiento%20de%20pestañas." class="btn-primary" target="_blank" style="display:inline-block;">Solicitar Asesoramiento</a>
+      </div>
+    </div>
+
+    <!-- POLÍTICA DE CITAS -->
+    <div class="booking-policy reveal" style="margin-top: 100px; max-width:1100px; margin-left:auto; margin-right:auto; padding: 0 24px;">
+      <div style="text-align: center; margin-bottom: 50px;">
+        <div class="section-eyebrow" style="justify-content:center;">
+          <div class="section-eyebrow-line"></div>
+          <span class="section-eyebrow-text">Normativas</span>
+          <div class="section-eyebrow-line"></div>
+        </div>
+        <h2 class="section-title">Cómo Reservar <em>Cita</em></h2>
+        <p class="section-intro" style="margin:20px auto 0;">Para garantizar un servicio de calidad y exclusividad, te presentamos nuestras normas y políticas de reserva.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 40px;">
+        
+        <div style="background:#fff; border:1px solid rgba(196,168,130,0.2); padding: 36px; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <h4 style="font-family:'Playfair Display', serif; font-size:1.3rem; color:var(--charcoal); margin-bottom:16px; display:flex; align-items:center; gap:12px;"><span style="font-family:'Cormorant Garamond', serif; color:var(--gold-dark); font-size:1.8rem; font-style:italic; line-height:1;">01</span> Reserva de Cita</h4>
+          <p style="font-size:0.95rem; color:var(--warm-grey); line-height:1.6; margin-bottom:16px;">Para agendar tu cita, es necesario realizar un pago previo de <strong>10€</strong> a través de Bizum al número:</p>
+          <div style="font-family:'Playfair Display', serif; font-size:1.6rem; color:var(--charcoal); text-align:center; padding:16px; background:var(--blush); border:1px dashed var(--gold); margin-bottom:16px;">622 106 687</div>
+          <p style="font-size:0.85rem; color:var(--gold-dark); font-style:italic;">* Ten en cuenta que la reserva no es reembolsable.</p>
+        </div>
+
+        <div style="background:#fff; border:1px solid rgba(196,168,130,0.2); padding: 36px; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <h4 style="font-family:'Playfair Display', serif; font-size:1.3rem; color:var(--charcoal); margin-bottom:16px; display:flex; align-items:center; gap:12px;"><span style="font-family:'Cormorant Garamond', serif; color:var(--gold-dark); font-size:1.8rem; font-style:italic; line-height:1;">02</span> Cancelaciones y Cambios</h4>
+          <p style="font-size:0.95rem; color:var(--warm-grey); line-height:1.6; margin-bottom:20px;">Si necesitas cancelar o modificar tu cita, debes hacerlo con un mínimo de <strong>48 horas de antelación</strong>.</p>
+          <div style="background:rgba(28,28,28,0.03); border-left:3px solid var(--charcoal); padding:16px;">
+            <p style="font-size:0.85rem; color:var(--charcoal); line-height:1.5;"><strong>Nota importante:</strong><br>De no cumplir con este plazo, perderás el importe de la reserva y deberás realizar una nueva para volver a agendar.</p>
+          </div>
+        </div>
+
+        <div style="background:#fff; border:1px solid rgba(196,168,130,0.2); padding: 36px; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <h4 style="font-family:'Playfair Display', serif; font-size:1.3rem; color:var(--charcoal); margin-bottom:16px; display:flex; align-items:center; gap:12px;"><span style="font-family:'Cormorant Garamond', serif; color:var(--gold-dark); font-size:1.8rem; font-style:italic; line-height:1;">03</span> Puntualidad</h4>
+          <p style="font-size:0.95rem; color:var(--warm-grey); line-height:1.6;">Valoramos enormemente tu tiempo y el nuestro. Por ello, el tiempo máximo de cortesía para la espera es de <strong>10 minutos</strong>. Pasado este tiempo, la cita se dará por cancelada automáticamente.</p>
+        </div>
+
+        <div style="background:#fff; border:1px solid rgba(196,168,130,0.2); padding: 36px; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <h4 style="font-family:'Playfair Display', serif; font-size:1.3rem; color:var(--charcoal); margin-bottom:16px; display:flex; align-items:center; gap:12px;"><span style="font-family:'Cormorant Garamond', serif; color:var(--gold-dark); font-size:1.8rem; font-style:italic; line-height:1;">04</span> Política de Reembolsos</h4>
+          <p style="font-size:0.95rem; color:var(--warm-grey); line-height:1.6;">No se realizan devoluciones del importe del servicio. Al ser un trabajo meticulosamente personalizado, el tiempo, el diseño y los recursos han sido reservados y dedicados exclusivamente para ti.</p>
+        </div>
+
+        <div style="background:#fff; border:1px solid rgba(196,168,130,0.2); padding: 36px; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <h4 style="font-family:'Playfair Display', serif; font-size:1.3rem; color:var(--charcoal); margin-bottom:16px; display:flex; align-items:center; gap:12px;"><span style="font-family:'Cormorant Garamond', serif; color:var(--gold-dark); font-size:1.8rem; font-style:italic; line-height:1;">05</span> Acompañantes</h4>
+          <p style="font-size:0.95rem; color:var(--warm-grey); line-height:1.6;">Por motivos de comodidad, concentración en tu diseño y enfoque en el servicio, <strong>no se permite</strong> el ingreso de acompañantes a la zona de trabajo. Este espacio está diseñado pensando únicamente en tu bienestar, relajación y tranquilidad.</p>
+        </div>
+
+        <div style="background:var(--charcoal); border:1px solid var(--charcoal); padding: 36px; color:var(--cream); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <h4 style="font-family:'Playfair Display', serif; font-size:1.3rem; color:var(--gold-light); margin-bottom:24px; display:flex; align-items:center; gap:12px;">Formas de Pago</h4>
+          <p style="font-size:0.95rem; color:rgba(253,250,247,0.8); line-height:1.6; margin-bottom:24px;">Además de la reserva inicial abonada por Bizum, aceptamos los siguientes métodos para el resto del servicio en el salón:</p>
+          <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:16px;">
+            <li style="display:flex; align-items:center; gap:12px; font-size:1rem; color:var(--cream);"><span style="color:var(--gold-light);">✓</span> Tarjeta de crédito / débito</li>
+            <li style="display:flex; align-items:center; gap:12px; font-size:1rem; color:var(--cream);"><span style="color:var(--gold-light);">✓</span> Pago en Efectivo</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; padding: 24px; background: rgba(196,168,130,0.1); border-radius: 4px; border-left: 4px solid var(--gold-dark);">
+        <p style="font-size:0.95rem; color:var(--charcoal); font-weight:500; margin-bottom:8px;">Aceptación de Condiciones</p>
+        <p style="font-size:0.85rem; color:var(--warm-grey);">Al reservar tu cita, aceptas automáticamente todas las normativas mencionadas anteriormente.</p>
+      </div>
+    </div>
+
+  </section>
+  </div>
+
+  <!-- INSTAGRAM HIGHLIGHT -->
+  <div id="tab-resenas" class="tab-content">
+  <section class="instagram-section" id="instagram">
+    <div class="instagram-text">
+      <div class="section-eyebrow reveal">
+        <div class="section-eyebrow-line" style="background:var(--gold-light);"></div>
+        <span class="section-eyebrow-text" style="color:var(--gold-light);">Síguenos</span>
+      </div>
+      <h2 class="section-title reveal" style="color:var(--cream);">Nuestro<br><em
+          style="color:var(--gold-light);">Instagram</em></h2>
+      <p class="reveal">Descubre resultados reales, novedades de formaciones y el día a día del estudio. Síguenos en
+        Instagram para no perderte ninguna fecha ni promoción.</p>
+    </div>
+    <div class="instagram-cta-col reveal">
+      <a href="https://www.instagram.com/lashes_cathylash?igsh=dGY0b3F2bTViaXVr" class="btn-instagram" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+        </svg>
+        <div>
+          <div>Seguir en Instagram</div>
+          <div class="btn-instagram-handle">@lashes_cathylash</div>
+        </div>
+      </a>
+      <div class="instagram-stats">
+        <div class="ig-stat">
+          <div class="ig-stat-num">1.8K</div>
+          <div class="ig-stat-label">Seguidoras</div>
+        </div>
+        <div class="ig-stat">
+          <div class="ig-stat-num">153</div>
+          <div class="ig-stat-label">Publicaciones</div>
+        </div>
+        <div class="ig-stat">
+          <div class="ig-stat-num">+11</div>
+          <div class="ig-stat-label">Años activa</div>
+        </div>
+        <div class="ig-stat">
+          <div class="ig-stat-num">100%</div>
+          <div class="ig-stat-label">Resultados reales</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="reviews" id="resenas">
+    <div class="section-eyebrow reveal">
+      <div class="section-eyebrow-line"></div>
+      <span class="section-eyebrow-text">Testimonios</span>
+    </div>
+    <h2 class="section-title reveal">Lo que dicen <em>ellas</em></h2>
+    <p class="section-intro reveal">Alumnas y clientas comparten su experiencia en primera persona. Estos son sus
+      testimonios.</p>
+    <div class="reviews-masonry reveal">
+      <div class="review-card featured">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">&ldquo;Hice la formación con Cathy y ha sido increíble. La práctica con modelo real me
+          dio la confianza que necesitaba para empezar a trabajar sola al día siguiente.&rdquo;</div>
+        <div class="review-author">
+          <div class="review-avatar">A</div>
+          <div>
+            <div class="review-name">Ana G.</div>
+            <div class="review-role">Alumna &middot; Extensiones</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">&ldquo;El kit de Maxymova que incluye es de otra categoría. Cathy explica con una
+          paciencia y precisión únicas. Me fui con todo el conocimiento y el material listo.&rdquo;</div>
+        <div class="review-author">
+          <div class="review-avatar">L</div>
+          <div>
+            <div class="review-name">Luisa F.</div>
+            <div class="review-role">Alumna &middot; Volumen Ruso</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">&ldquo;La técnica de pestañas que enseña Cathy es absolutamente revolucionaria. Mis clientas
+          preguntan qué hago diferente, y la respuesta es: aprendí con la mejor.&rdquo;</div>
+        <div class="review-author">
+          <div class="review-avatar">S</div>
+          <div>
+            <div class="review-name">Sofía M.</div>
+            <div class="review-role">Alumna &middot; Pestaña Láser</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">&ldquo;Son 8 horas intensas pero enormemente rentables. Me sentí completamente
+          preparada al salir. La inversión se recupera al primer mes de trabajo.&rdquo;</div>
+        <div class="review-author">
+          <div class="review-avatar">P</div>
+          <div>
+            <div class="review-name">Paula R.</div>
+            <div class="review-role">Alumna &middot; Pack Completo</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">&ldquo;Si buscas calidad real, esta es la formación. Cathy, con sus 11 años de
+          experiencia, sabe exactamente qué necesitas aprender y cómo transmitirlo.&rdquo;</div>
+        <div class="review-author">
+          <div class="review-avatar">V</div>
+          <div>
+            <div class="review-name">Valeria T.</div>
+            <div class="review-role">Alumna &middot; Lifting Coreano</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card featured">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">&ldquo;El Lifting Coreano de Cathy es pura magia. Mis pestañas naturales nunca se
+          habían visto así. Llevo tres veces y cada visita es una experiencia única.&rdquo;</div>
+        <div class="review-author">
+          <div class="review-avatar">M</div>
+          <div>
+            <div class="review-name">Marta S.</div>
+            <div class="review-role">Clienta &middot; Lifting Coreano</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">&ldquo;Llevo extensiones desde hace años, pero la técnica de Cathy es otro nivel.
+          Supernaturales, ligeras, y duran el doble de tiempo. No voy a ningún otro sitio.&rdquo;</div>
+        <div class="review-author">
+          <div class="review-avatar">I</div>
+          <div>
+            <div class="review-name">Isabel B.</div>
+            <div class="review-role">Clienta &middot; Extensiones</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">&ldquo;Cathy es la única profesional a la que confío mis ojos sin dudar. Su dominio de
+          la pestaña no tiene competencia. El resultado habla solo.&rdquo;</div>
+        <div class="review-author">
+          <div class="review-avatar">C</div>
+          <div>
+            <div class="review-name">Cristina L.</div>
+            <div class="review-role">Clienta &middot; Pestaña Láser</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">&ldquo;El espacio es precioso, te relajas al instante. Y el resultado, espléndido.
+          Profesionalidad en cada detalle, de principio a fin. Repito siempre.&rdquo;</div>
+        <div class="review-author">
+          <div class="review-avatar">C</div>
+          <div>
+            <div class="review-name">Carmen N.</div>
+            <div class="review-role">Clienta &middot; Extensiones</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">&ldquo;Profesionalidad máxima. Mi mirada ha cambiado por completo, me veo más joven y
+          despierta. Gracias a Cathy he recuperado la confianza en mis pestañas.&rdquo;</div>
+        <div class="review-author">
+          <div class="review-avatar">R</div>
+          <div>
+            <div class="review-name">Raquel P.</div>
+            <div class="review-role">Clienta &middot; Lifting Coreano</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="contacto">
+    <div class="reveal">
+      <h2 class="cta-h2">&iquest;Lista para<br><em>transformar</em><br>tu mirada?</h2>
+      <p class="cta-body">Contacta con Cathy directamente por WhatsApp para reservar tu cita o solicitar información
+        sobre las próximas formaciones. Respuesta garantizada en menos de 24 horas.</p>
+    </div>
+    <div class="cta-actions reveal reveal-delay">
+      <a href="https://wa.me/34622106687?text=Hola%20Cathy!%20Quiero%20información." class="btn-whatsapp"
+        target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          <path
+            d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.857L.057 24l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.016-1.375l-.36-.213-3.737.979 1-3.643-.234-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+        </svg>
+        Escribir por WhatsApp
+      </a>
+      <a href="https://wa.me/34622106687?text=Hola!%20Quiero%20reservar%20plaza%20en%20la%20formación."
+        class="btn-primary" target="_blank">Reservar Formación</a>
+      <p class="cta-note">📍 Zaragoza · +34 622 10 66 87<br>Respuesta garantizada en menos de 24 horas</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Lashes &middot; Cathylash</div>
+        <div class="footer-desc">Especialista en extensiones, lifting coreano y pestaña led. Trainer oficial Maxymova
+          con más de 11 años transformando miradas en Zaragoza.</div>
+        <a href="https://www.instagram.com/lashes_cathylash?igsh=dGY0b3F2bTViaXVr" class="footer-ig" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg>
+          @lashes_cathylash
+        </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Servicios</div>
+        <ul class="footer-links">
+          <li><a href="#servicios">Extensiones de Pestañas</a></li>
+          <li><a href="#servicios">Pestaña LED</a></li>
+          <li><a href="#servicios">Lifting Coreano</a></li>
+          <li><a href="#academia">Formaciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-contact-lbl">WhatsApp</div>
+        <div class="footer-contact-val">+34 622 10 66 87</div>
+        <div class="footer-contact-lbl">Ubicación</div>
+        <div class="footer-contact-val">Zaragoza (Valdespartera Calle Un Americano en París), 50019 Zaragoza, España</div>
+        <div class="footer-contact-lbl">Instagram</div>
+        <div class="footer-contact-val">@lashes_cathylash</div>
+      </div>
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin: 10px 0;">
+  <p style="text-align: center; margin-bottom: 5px; font-family: sans-serif; font-size: 14px;">
+    <strong>Ubicación:</strong> Calle de Un Americano en París, 50019 Zaragoza
+  </p>
+  
+  <div style="width: 300px; height: 200px; overflow: hidden; border-radius: 10px; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <iframe 
+      width="300" 
+      height="200" 
+      frameborder="0" 
+      style="border:0" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.473522108785!2d-0.9234!3d41.6111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd596aef17075f7f%3A0x2a26261ea6f5d88a!2sCalle%20Un%20Americano%20en%20Par%C3%ADs%2C%2050019%20Zaragoza!5e0!3m2!1ses!2ses!4v1712850000000" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2025 Lashes Cathylash &middot; Todos los derechos reservados</div>
+      <div class="footer-badge">Trainer Oficial <span>@maxymova_official</span></div>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(r => observer.observe(r));
+
+    // Calendar
+    function selectDate(el, info) {
+      document.querySelectorAll('.cal-date').forEach(d => d.classList.remove('active'));
+      el.classList.add('active');
+      const box = document.getElementById('calInfo');
+      const type = el.querySelector('.cal-type').textContent;
+      box.innerHTML = '<strong>' + type + '</strong> &middot; ' + info;
+      box.classList.add('visible');
+    }
+
+
+    // Tabs de cursos dentro de Formación
+    function switchCurso(n) {
+      document.querySelectorAll('.curso-nav-item').forEach((btn, i) => {
+        btn.classList.toggle('active-curso', i === n - 1);
+      });
+      document.querySelectorAll('.curso-section').forEach((sec, i) => {
+        sec.classList.toggle('active-curso-sec', i === n - 1);
+      });
+      window.scrollTo({ top: document.getElementById('tab-academia').offsetTop - 72, behavior: 'smooth' });
+    }
+
+    // Tabs de cursos dentro de Formación
+    function switchCurso(n) {
+      document.querySelectorAll('.curso-nav-item').forEach((btn, i) => {
+        btn.classList.toggle('active-curso', i === n - 1);
+      });
+      document.querySelectorAll('.curso-section').forEach((sec, i) => {
+        sec.classList.toggle('active-curso-sec', i === n - 1);
+      });
+      window.scrollTo({ top: document.getElementById('tab-academia').offsetTop - 72, behavior: 'smooth' });
+    }
+
+    // Módulos accordion
+    function toggleModulo(id) {
+      const item = document.getElementById(id);
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.modulo-item.open').forEach(m => {
+        m.classList.remove('open');
+        m.querySelector('.modulo-toggle').textContent = '+';
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        item.querySelector('.modulo-toggle').textContent = '−';
+      }
+    }
+
+    // Services accordion
+    function toggleService(id) {
+      const item = document.getElementById(id);
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.service-item.open').forEach(s => {
+        s.classList.remove('open');
+        s.querySelector('.service-toggle').textContent = '+';
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        item.querySelector('.service-toggle').textContent = '−';
+      }
+    }
+    // Init first service
+    document.querySelector('#srv1 .service-toggle').textContent = '−';
+
+    // Mobile nav
+    function toggleMenu(btn) {
+      const links = document.querySelector('.nav-links');
+      const cta = document.querySelector('.nav-cta');
+      const open = links.style.display === 'flex';
+      links.style.cssText = open ? '' : 'display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:var(--cream);padding:28px 24px;gap:22px;border-bottom:1px solid var(--light-grey);z-index:99;';
+      if (cta) cta.style.display = open ? '' : 'none';
+    }
+
+    // Tabs functionality
+    function openTab(evt, tabId) {
+      if (evt) evt.preventDefault();
+      
+      // Hide all tabs
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active-tab');
+      });
+      
+      // Remove 'active' class from all nav links
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+      });
+      
+      // Show the current tab
+      const targetTab = document.getElementById(tabId);
+      if (targetTab) targetTab.classList.add('active-tab');
+      
+      // Add 'active' class to the cliked nav link
+      if (evt && evt.currentTarget.classList.contains('nav-link')) {
+        evt.currentTarget.classList.add('active');
+      } else if (tabId === 'tab-home') {
+        // If triggered from logo, highlight the 'Inicio' link
+        const homeLink = document.querySelector('.nav-link[onclick*="tab-home"]');
+        if(homeLink) homeLink.classList.add('active');
+      }
+      
+      // Close mobile menu if open
+      closeMobileMenu();
+      
+      // Smooth scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    function closeMobileMenu() {
+      const links = document.querySelector('.nav-links');
+      if (links && links.style.display === 'flex') {
+        const toggleBtn = document.querySelector('.nav-toggle');
+        toggleMenu(toggleBtn);
+      }
+    }
+  </script>
+</body>
+
+</html>
